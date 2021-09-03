@@ -109,8 +109,12 @@ def three(a):
 
 
 def four(string1, string2):
-    return
-
+    newstring = "" #create a new empty string
+    for i in range(len(string1)): #for every letter in the length of string1 (both are equal length so could have also used string2)
+        newstring += string1[i] #add the letter from string1 to the newstring
+        newstring += string2[i] #add the letter from string 2 to the newstring and then repeat the for loop for the other letters
+    return newstring #return the newstring
+#not familiar with zip function so did it this way
     # <QUESTION 5>
 
     # Write a function to randomly generate a list with 5 even numbers between 100 and 200 inclusive.
@@ -220,6 +224,7 @@ def eight(string, num):
 
 def nine(string1, string2):
     # make sure string1 is the shortest of the two
+
     return
 
     # <QUESTION 10>
