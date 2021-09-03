@@ -114,7 +114,8 @@ def four(string1, string2):
         newstring += string1[i] #add the letter from string1 to the newstring
         newstring += string2[i] #add the letter from string 2 to the newstring and then repeat the for loop for the other letters
     return newstring #return the newstring
-#not familiar with zip function so did it this way
+#not sure how to do it with zip function so did it this way
+
     # <QUESTION 5>
 
     # Write a function to randomly generate a list with 5 even numbers between 100 and 200 inclusive.
@@ -131,8 +132,8 @@ def four(string1, string2):
 
 
 def five():
-    list = [random.randint(50,100) * 2 for i in range(5)] #make a new list which randomly generates 5 integers between 50 and 100 and then multiplies them by 2 so that they will be even and within the 100 - 200 range
-    return list #returns the list
+    newlist = [random.randint(50,100) * 2 for i in range(5)] #make a new list which randomly generates 5 integers between 50 and 100 and then multiplies them by 2 so that they will be even and within the 100 - 200 range
+    return newlist #returns the list
 
     # <QUESTION 6>
 
@@ -205,6 +206,7 @@ def seven(a, b, c):
 
 
 def eight(string, num):
+    
     return
 
     # <QUESTION 9>
@@ -224,8 +226,11 @@ def eight(string, num):
 
 def nine(string1, string2):
     # make sure string1 is the shortest of the two
+    list1 = [string1]
+    list2 = [string2]
+    if len(string1) > string2:
 
-    return
+        return
 
     # <QUESTION 10>
 
@@ -244,4 +249,5 @@ def nine(string1, string2):
 
 
 def ten(a, b):
+    newlist =[]
     return
