@@ -32,7 +32,10 @@ import random
 
 
 def one(string):
-    return
+    string2= "" #create a new empty string
+    for char in string: #go through every character from the input string
+        string2 += char * 3 #add three of every character from the input string to the new string
+    return string2 #return the new string
 
     # <QUESTION 2>
 
@@ -51,7 +54,14 @@ def one(string):
 
 
 def two(num):
-    return
+    if num <=2: #if the number is less than or equal to 2
+        return True #will return true
+    elif num > 2: #otherwise, if the number is greater than 2
+        for i in range(2, num): #for every number from 2 to the input number 
+            if num % i == 0: #if the remainder of the number divided by each number going up to itself is 0
+                return False #will return false
+            else: #otherwise
+                return True #will return true
 
     # <QUESTION 3>
 
@@ -69,7 +79,7 @@ def two(num):
 
 
 def three(a):
-    return
+    return a * 1234 #a+aa+aaa+aaaa is the same as multiplying by 1234 so the answer is just a times 1234 for any input
 
     # <QUESTION 4>
 
@@ -117,7 +127,8 @@ def four(string1, string2):
 
 
 def five():
-    return
+    list = [random.randint(50,100) * 2 for i in range(5)] #make a new list which randomly generates 5 integers between 50 and 100 and then multiplies them by 2 so that they will be even and within the 100 - 200 range
+    return list #returns the list
 
     # <QUESTION 6>
 
@@ -137,7 +148,11 @@ def five():
 
 
 def six(string):
-    return
+    string = string.lower() #make the input string lowercase so we only have to deal with one case
+    if string.endswith("py"): #checks to see if the string ends with "py"
+        return True #if it does end with "py" it will return a true value
+    else: #otherwise
+        return False #if it doesn't end in "py" it will return false
 
     # <QUESTION 7>
 
