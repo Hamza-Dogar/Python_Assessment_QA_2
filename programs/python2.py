@@ -177,7 +177,12 @@ def six(string):
 
 
 def seven(a, b, c):
-    return
+    newlist = [a, b, c] #makes a new list consisting of the 3 input integers
+    newlist.sort() #sorts the newlist lowest to highest
+    if (newlist[1] - newlist[0]) == (newlist[2] - newlist[1]) : #checks to see if the number in the second position of the list subtract the number in the first position is equal to the 3rd position subtract the second position
+        return True #if they are equal then it will return true
+    else: #otherwise
+        return False #if they are not equal it will return false
 
     # <QUESTION 8>
 
